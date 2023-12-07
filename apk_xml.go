@@ -42,17 +42,17 @@ type apkAppActivityAlias struct {
 
 // apkApplication is an application in an APK.
 type apkApplication struct {
-	AllowTaskReParenting  bool   `xml:"allowTaskReparenting,attr"`
-	AllowBackup           bool   `xml:"allowBackup,attr"`
-	BackupAgent           string `xml:"backupAgent,attr"`
-	Debuggable            bool   `xml:"debuggable,attr"`
-	Description           string `xml:"description,attr"`
-	Enabled               bool   `xml:"enabled,attr"`
-	HasCode               bool   `xml:"hasCode,attr"`
-	HardwareAccelerated   bool   `xml:"hardwareAccelerated,attr"`
-	Icon                  string `xml:"icon,attr"`
-	KillAfterRestore      bool   `xml:"killAfterRestore,attr"`
-	LargeHeap             bool   `xml:"largeHeap,attr"`
+	AllowTaskReParenting bool `xml:"allowTaskReparenting,attr"`
+	//AllowBackup          bool   `xml:"allowBackup,attr"`
+	BackupAgent string `xml:"backupAgent,attr"`
+	Debuggable  bool   `xml:"debuggable,attr"`
+	Description string `xml:"description,attr"`
+	Enabled     bool   `xml:"enabled,attr"`
+	HasCode     bool   `xml:"hasCode,attr"`
+	//HardwareAccelerated  bool   `xml:"hardwareAccelerated,attr"`
+	Icon             string `xml:"icon,attr"`
+	KillAfterRestore bool   `xml:"killAfterRestore,attr"`
+	//LargeHeap             bool   `xml:"largeHeap,attr"`
 	Label                 string `xml:"label,attr"`
 	Logo                  string `xml:"logo,attr"`
 	ManageSpaceActivity   string `xml:"manageSpaceActivity,attr"`
@@ -64,11 +64,11 @@ type apkApplication struct {
 	RequiredAccountType   string `xml:"requiredAccountType,attr"`
 	RestrictedAccountType string `xml:"restrictedAccountType,attr"`
 	//SupportsRtl           bool                  `xml:"supportsRtl,attr"`
-	TaskAffinity    string                `xml:"taskAffinity,attr"`
-	TestOnly        bool                  `xml:"testOnly,attr"`
-	Theme           string                `xml:"theme,attr"`
-	UIOptions       string                `xml:"uiOptions,attr"`
-	VMSafeMode      bool                  `xml:"vmSafeMode,attr"`
+	TaskAffinity string `xml:"taskAffinity,attr"`
+	TestOnly     bool   `xml:"testOnly,attr"`
+	Theme        string `xml:"theme,attr"`
+	UIOptions    string `xml:"uiOptions,attr"`
+	//VMSafeMode      bool                  `xml:"vmSafeMode,attr"`
 	Activities      []apkAppActivity      `xml:"activity"`
 	ActivityAliases []apkAppActivityAlias `xml:"activity-alias"`
 }
